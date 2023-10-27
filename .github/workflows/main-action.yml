@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Print a message
-        run: echo "Hello, GitHub Actions"
+        run: ls
       
       - name: Execute script
         run: project.py
