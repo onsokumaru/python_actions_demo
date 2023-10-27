@@ -16,3 +16,6 @@ jobs:
 
       - name: Print a message
         run: echo "Hello, GitHub Actions"
+      
+      - name: Execute script
+        run: project.py
