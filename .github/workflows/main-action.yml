@@ -1,22 +1,22 @@
-name: Simple GitHub Action Demo
+# name: Simple GitHub Action Demo
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Check out code
-        # uses: actions/checkout@v2 # is to checkout tag: v2
-        uses: actions/checkout@main
+#     steps:
+#       - name: Check out code
+#         # uses: actions/checkout@v2 # is to checkout tag: v2
+#         uses: actions/checkout@main
 
-      # - name: Print a message
-        # run: ls
-      
-      - name: Execute script
-        run: python project.py
+#       # - name: Print a message
+#         # run: ls
+#       
+#       - name: Execute script
+#         run: python project.py
