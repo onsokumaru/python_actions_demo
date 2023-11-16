@@ -1,6 +1,8 @@
 # README
 ---
 
+![project_license](https://badgen.net/badge/license/gpl3/green?icon=github)
+
 ![my badge](https://badgen.net/badge/hello/world/red?icon=github)
 
 
