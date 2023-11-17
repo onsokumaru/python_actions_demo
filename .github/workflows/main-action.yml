@@ -21,8 +21,8 @@ jobs:
           python3 -m venv env 
           source env/bin/activate
           echo "VIRTUAL ENV: " $VIRTUAL_ENV
-          # python -m pip install pytest
-          # python -m pip install pytest-cov
+          python -m pip install pytest
+          python -m pip install pytest-cov
       
       - name: Test and create coverage report
         run: | 
