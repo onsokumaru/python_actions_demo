@@ -1,5 +1,6 @@
 # ----- .gitignore ----- #
 
+.coverage
 .venv/*
 tests/__pycache__/*
 modules/__pycache__/*
