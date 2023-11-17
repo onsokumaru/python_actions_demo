@@ -19,8 +19,8 @@ jobs:
         run: |
           pip install --upgrade pip
           python3 -m venv env 
-          source env/bin/activate
-          echo "VIRTUAL ENV: " $VIRTUAL_ENV
+          # source env/bin/activate
+          # echo "VIRTUAL ENV: " $VIRTUAL_ENV
           python -m pip install pytest
           python -m pip install pytest-cov
       
@@ -30,7 +30,7 @@ jobs:
           echo "VIRTUAL ENV: " $VIRTUAL_ENV
           pip list
           python project.py
-          # pytest --cov --cov-report term --cov-report xml:coverage.xml
+          pytest --cov --cov-report term --cov-report xml:coverage.xml
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
