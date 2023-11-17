@@ -26,6 +26,9 @@ jobs:
       - name: Execute script
         run: python project.py
 
+      - name: Create coverage report
+        run: pytest --cov --cov-report term --cov-report xml:coverage.xml
+
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
         env:
